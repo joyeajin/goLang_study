@@ -3,16 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	age := 2
-
-	switch age {
-	case 1:
-		fmt.Println("초등생1")
-		fmt.Println("초등생2")
-	case 2:
-		fmt.Println("초등생3")
-	default:
-		fmt.Println("학생 아님")
+	// x := 1
+	// for x < 5 {
+	// 	fmt.Println(x)
+	// 	x++
+	// }
+	for x := 1; x <= 15; x++ {
+		// fmt.Println(x)
+		if x == 3 {
+			continue
+		} else if x == 8 {
+			break
+		}
+		fmt.Println(x)
 	}
-
 }
