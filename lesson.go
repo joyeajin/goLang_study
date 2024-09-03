@@ -3,24 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	age := 15
+	age := 2
 
-	if age >= 18 {
-		fmt.Println("군대갈 수 있음")
-	} else if age >= 14 {
-		fmt.Println("학도병에 지원하세요")
-	} else {
-		fmt.Println("군대갈 수 없음")
+	switch age {
+	case 1:
+		fmt.Println("초등생1")
+		fmt.Println("초등생2")
+	case 2:
+		fmt.Println("초등생3")
+	default:
+		fmt.Println("학생 아님")
 	}
-
-	// if age >= 18 {
-	// 	fmt.Println("군대갈 수 있음")
-	// }
-	// if age >= 14 && age < 18 {
-	// 	fmt.Println("학도병에 지원하세요")
-	// }
-	// if age < 14 {
-	// 	fmt.Println("군대갈 수 없음")
-	// }
 
 }
